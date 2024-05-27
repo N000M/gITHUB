@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Mutlak Pinto">
+    <title>Spotify Sara Mutlak</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{display: flex;justify-content: center;}
+        #retícula{display: grid;grid-template-columns: 1fr 1fr 1fr; width: 90vw;}
+        .elemento{text-align: center;}
+        img{width:22vw; height: 22vw; margin: 2vw; object-fit: cover;}
+        audio{width: 22vw;}
+        
+    </style>
+</head>
+<body>
+    <div id="retícula">
+        <div class="elemento">
+            <img src="images/foto1.jpg" onclick="playSound1()">
+            <audio src="audio/ytmp3free.cc_mitski-shouldve-been-me-official-audio-youtubemp3free.org.mp3" id="audio1" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/foto2.png" onclick="playSound2()">
+            <audio src="audio/ytmp3free.cc_louise-youtubemp3free.org.mp3" id="audio2" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/foto3.jpeg" onclick="playSound3()">
+            <audio src="audio/ytmp3free.cc_dance-with-me-youtubemp3free.org.mp3" id="audio3" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/foto4.jpg" onclick="playSound4()">
+            <audio src="audio/ytmp3free.cc_mitski-remember-my-name-official-audio-youtubemp3free.org.mp3" id="audio4" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/foto5.jpeg" onclick="playSound5()">
+            <audio src="audio/ytmp3free.cc_i-cant-decide-scissor-sisters-sub-espaol-youtubemp3free.org.mp3" id="audio5" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="images/foto5.jpg" onclick="playSound6()">
+            <audio src="audio/ytmp3free.cc_nothings-new-rio-romeo-youtubemp3free.org.mp3" id="audio6" controls loop></audio>
+        </div>
+    </div>
+    <script>
+        function playSound1(){
+            let audio = document.getElementById("audio1");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound1(){
+            let audio = document.getElementById("audio2");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound1(){
+            let audio = document.getElementById("audio3");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound1(){
+            let audio = document.getElementById("audio4");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound1(){
+            let audio = document.getElementById("audio5");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+        function playSound1(){
+            let audio = document.getElementById("audio6");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        }
+    </script>
+</body>
+</html>

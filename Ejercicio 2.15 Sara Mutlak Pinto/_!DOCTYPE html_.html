@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Mutlak Pinto">
+    <title>Ejercicio 2.15 Sara Mutlak Pinto</title>
+</head>
+<style>
+    p{margin: 0;}
+    .contenedor{display: grid; grid-template-columns: 1fr 1fr 1fr;}
+    img{width: 25vw; height: 25vw; object-fit:cover; margin:2vw}
+    @media only screen and (max-width:600px){
+    div {grid-template-columns: 1fr 1fr; }
+    }
+    .texto{width:25vw; height: 25vw; margin:2vw; background-color: rgb(255, 255, 113);display: flex;justify-content: center;align-items:center;text-align: center
+        ; transform: rotate(15deg)}
+</style>
+<body style="display:flex; justify-content:center; margin:0;">
+    <div class="contenedor">
+        <img src="Imagenes/1.jpg">
+        <img src="Imagenes/2.jpg"style="width: 54vw; grid-column: 2/4;">
+        <div class="texto"> <p style="transform: rotate(1deg)"><b> Prueba de layout utilizando CSS grid. Sara Mutlak Pinto</b></p></div>
+        <img src="Imagenes/3.jpg">
+        <img src="Imagenes/7.jpg">
+        <img src="Imagenes/8.jpg">
+        <img src="Imagenes/4.jpeg" style="width: 54vw; grid-column: 2/4;">
+        <img src="Imagenes/6.jpg" style="width: 54vw; grid-column: 1/3;">
+        <img src="Imagenes/9.jpg">        
+    </div>
+</body>
+</html>

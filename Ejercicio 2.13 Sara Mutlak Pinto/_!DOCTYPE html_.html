@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Mutlak Pinto">
+    <title>Ejercicio 2.13 Sara Mutlak Pinto</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    .contenedor{display: flex;justify-content: space-around;height: 100vh;background-color:rgb(250, 236, 214);padding: 5%;margin-bottom: 5%;}
+    .caja{width: 100px;height: 100px;background-color: black;color: aliceblue; padding: 5px;}
+    h1{font-family: ;}
+</style>
+<body>
+    <div class="contenedor">
+        <h1>Position static (por defecto)</h1>
+        <div class="caja" style="position:static;top: 50px;left: 10px; background-image: url(Imagenes/gatotraje.png);background-size: cover;color: black;">static</div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+    </div>
+    <div class="contenedor">
+        <h1>Position relative</h1>
+        <div class="caja" style="position: relative;top: 50px;left: 10px; background-image: url(Imagenes/gatofeliz.jpg);background-size: cover;">relative</div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+    </div>
+    <div class="contenedor">
+        <h1>Possssition absolute</h1>
+        <div class="caja" style="position: absolute;top: 2000px;left: 500px;background-image: url(Imagenes/gato3.png);background-size: cover;">absolute</div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+    </div>
+    <div class="contenedor">
+        <h1>Position sticky</h1>
+        <div class="caja" style="position: sticky;top: 50px; background-image: url(Imagenes/Gato.jpg);background-size: cover">sticky</div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+    </div>
+    <div class="contenedor">
+        <h1>Position fixed</h1>
+        <div class="caja" style="position: fixed;top: 100px;left: 300px; background-image: url(Imagenes/gato2.jpg);background-size: cover">Fixed</div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+        <div class="caja" style="background-image: url(Imagenes/gatos3.png); background-size: cover;"></div>
+    </div>
+</body>
+</html>

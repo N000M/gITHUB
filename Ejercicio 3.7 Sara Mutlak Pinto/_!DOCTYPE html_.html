@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Mutlak Pinto">
+    <title>Ejercicio 3.7 Sara Mutlak Pinto</title>
+    <style>
+        p{color: rgb(9, 35, 141); font-size: 30px;}
+        img{display: block; margin: auto; height: 400px;width: 400px;}
+        div{text-align: center; background-color: rgb(232, 255, 254);}
+    </style>
+</head>
+<body>
+    <div>
+        <p id="ejemplo">Animales marinos raros :3</p>
+        <img src="images/3.webp" alt="" id="foto"> <br>
+        <button onclick="funcIzqda();"> Atrás</button>
+        <button onclick="funDcha();">Siguiente</button>
+    </div>
+    <script>
+        let a = ["images/1.jpg","images/2.jpg","images/3.webp","images/4.png", "images/5.webp", "images/6.jpg"];
+        let i = 2;
+
+        function funcIzqda(){
+            if (i>0){
+                i--;
+                document.getElementById("foto").src=a[i];}
+        }
+        function funDcha(){
+            if (i<4){
+                i++;
+                document.getElementById("foto").src=a[i];}
+        }
+    </script>
+</body>
+</html>
